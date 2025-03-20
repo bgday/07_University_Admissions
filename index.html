@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>07 University Admissions | Brian Day Dev</title>
+    <meta name="description" content="Brian Day's start file" />
+    <meta name="author" content="Brian Day" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet" />
+
+    <!--fav icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+  </head>
+  <body>
+    <div id="headerWrapper">
+      <header id="top">
+        <img
+          src="./images/logo1x.png"
+          alt="logo"
+          width="50"
+          height="auto"
+          srcset="
+            ./images/logo1x.png 1x,
+            ./images/logo2x.png 2x,
+            ./images/logo3x.png 3x
+          "
+        />
+        <span>Legit University</span>
+        <a id="ham" href="#navLinks">&#9776;</a>
+      </header>
+    </div>
+
+    <div id="navWrapper">
+      <nav id="navLinks">
+        <a id="navClose" href="#top">&#10005</a>
+        <ul>
+          <li class="active">
+            <a href="#"><span class="activeSpan">Admissions</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="inactiveSpan">Programs</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="inactiveSpan">About Us</span></a>
+          </li>
+          <li>
+            <a href="#"><span class="inactiveSpan">Contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="mainWrapper">
+      <main>
+        <h1>Apply for Admission</h1>
+        <form action="thanks.html" method="GET" class="formClass" autocomplete="on">
+          <div class="formSection">
+          <h3>Personal Information</h3>
+          <label>First Name: <input type="text" name="fname" autocomplete="given-name" required title="Enter first name"></label>
+          <label>Last Name: <input type="text" name="lname" autocomplete="family-name" required title="Enter last name"></label>
+          <label>Email: <input type="email" name="email" autocomplete="email" required title="Enter email address"></label>
+          <label>Cell Phone: <input type="tel" name="cphone" autocomplete="tel" required title="Enter cell phone number"></label>
+        </div>
+        <div class="formSection">
+          <h3>Check for Scholarships</h3>
+          <label>What kind of student are you?
+          <label><input type="checkbox" name="smart">4.0 student</label>
+          <label><input type="checkbox" name="first">First generation student</label>
+          <label><input type="checkbox" name="cool">Really cool student</label>
+            </label>
+          <label>For what semester are you applying?
+          <label><input type="radio" name="spring">Spring</label>
+          <label><input type="radio" name="fall">Fall</label>
+          <label><input type="radio" name="winter">Winter</label>
+        </label>
+        </div>
+          <div class="formSection">
+          <h3>Create Your Login</h3>
+          <label>UserName (6 or more): <input type="text" required minlength="6" title="Please enter a username longer than 6 characters"></label>
+          <label>Password (5-9 letters or numbers): <input type="password" name="password" required pattern="[A-Za-z0-9]{5,9}"></label>
+          </div>
+          <input type="submit" value="Begin your Education">
+        </form>
+      </main>
+    </div>
+
+    <div id="footerWrapper">
+      <footer>
+        <div>
+          <section class="social">
+            <a href="https://www.facebook.com"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+            <a href="https://www.twitter.com"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+            <a href="https://www.linkedin.com"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+            <a href="https://www.youtube.com"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </section>
+        </div>
+        <p class="legal">&copy; <span id="year"></span> &bull; Brian Day</p>
+      </footer>
+    </div>
+
+    <script src="js/scripts.js" type="module"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

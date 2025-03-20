@@ -1,0 +1,56 @@
+header,
+nav,
+main,
+footer {
+  max-width: 65rem;
+  margin: auto;
+}
+/* #navwrapper {
+  background-color: $accentColor;
+}
+
+#primaryNav {
+
+  ul {
+    position:relative;
+    right:0px;
+    top:0px;
+    background-color: $secondaryColor;
+    }
+  }
+
+
+#navButton {
+  display: none;
+}
+*/
+//MAIN
+
+#mainWrapper main {
+  .hero {
+    margin-top: 1rem;
+    p {
+      bottom: 0;
+      left: 0;
+      text-align: left;
+      line-height: 1.5rem;
+      .hiddenMobile,
+      .hiddenTablet {
+        display: inline;
+      }
+    }
+  }
+  h1 {
+    margin: 2rem 0;
+    text-align: center;
+  }
+}
+
+// create for loop
+
+@for $i from 1 through 12 {
+  $width: calc($i/12) * 100%;
+  .large-#{$i} {
+    flex-basis:$width;
+  }
+}
