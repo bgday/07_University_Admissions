@@ -26,6 +26,10 @@ footer {
 */
 //MAIN
 
+nav ul {
+  justify-content:flex-end;
+}
+
 #mainWrapper main {
   .hero {
     margin-top: 1rem;

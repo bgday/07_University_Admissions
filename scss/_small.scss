@@ -120,11 +120,16 @@ input[type=radio] {
   margin:.25rem .25rem;
 }
 
+input[type="submit"] {
+  cursor: pointer;
+}
+
 input[type=text],
 input[type=tel],
 input[type=number],
 input[type=email],
 input[type=password],
+input[type=date]
 select {
   display:block;
 }

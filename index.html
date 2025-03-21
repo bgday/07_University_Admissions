@@ -68,23 +68,46 @@
           <label>Cell Phone: <input type="tel" name="cphone" autocomplete="tel" required title="Enter cell phone number"></label>
         </div>
         <div class="formSection">
-          <h3>Check for Scholarships</h3>
-          <label>What kind of student are you?
-          <label><input type="checkbox" name="smart">4.0 student</label>
-          <label><input type="checkbox" name="first">First generation student</label>
-          <label><input type="checkbox" name="cool">Really cool student</label>
-            </label>
-          <label>For what semester are you applying?
-          <label><input type="radio" name="spring">Spring</label>
-          <label><input type="radio" name="fall">Fall</label>
-          <label><input type="radio" name="winter">Winter</label>
+          <h3>Address</h3>
+          <label>Street Address: <input type="text" name="street" autocomplete="street-address" title="Enter street address"></label>
+          <label>City: <input type="text" name="city" autocomplete="address-level2" title="Enter city"></label>
+          <label>State: <input type="text" name="state" autocomplete="address-level1" title="Enter state"></label>
+          <label>Zip Code: <input type="number" name="zip" autocomplete="postal-code" title="Enter zip code"></label>
+        </div>
+        <div class="formSection">
+          <h3>Previous Education</h3>
+       
+          <label><input type="checkbox" name="highschool">Highschool</label>
+          <label><input type="checkbox" name="scollege">Some college</label>
+          <label><input type="checkbox" name="assoc">Associates degree</label>
+          <label><input type="checkbox" name="bach">Bachelors degree</label>
+          
+          <label>Highschool Graduation Date: <input type="date" name="hsGradDate" title="Enter highschool graduation date"></label>
+
+          <label> Previous School:
+          <select name="prevSchool">
+            <option value="na">N/A</option>
+            <option value="UVU">UVU</option>
+            <option value="UofU">University of Utah</option>
+            <option value="Harvard">Harvard University</option>
+          </select>
         </label>
+        </div>
+
+        <div class="formSection">
+          <h3>Communication Preference</h3>
+          <label><input type="radio" name="snail">Phone call</label>
+          <label><input type="radio" name="email">Email</label>
+          <label><input type="radio" name="text">Text</label>
+       
         </div>
           <div class="formSection">
           <h3>Create Your Login</h3>
-          <label>UserName (6 or more): <input type="text" required minlength="6" title="Please enter a username longer than 6 characters"></label>
-          <label>Password (5-9 letters or numbers): <input type="password" name="password" required pattern="[A-Za-z0-9]{5,9}"></label>
-          </div>
+          
+          <label>UserName (5-10 letters or numbers): <input type="text" name="username" required pattern="[A-Za-z0-9]{5,10}"></label>
+          <label>Password (6 or more characters): <input type="text" required minlength="6" title="Please enter a username longer than 6 characters"></label>  
+        
+        </div>
           <input type="submit" value="Begin your Education">
         </form>
       </main>
